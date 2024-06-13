@@ -15,8 +15,7 @@ const layersDir = path.join(basePath, "/layers");
  * General Generator Options
  ***********************/
 
-const description =
-  "This is the description of your NFT project, remember to replace this";
+const description = "이 사자 NFT는 너무 멋져요!";
 const baseUri = "ipfs://NewUriToReplace";
 
 const outputJPEG = false; // if false, the generator outputs png's
@@ -25,7 +24,7 @@ const outputJPEG = false; // if false, the generator outputs png's
  * Set your tokenID index start number.
  * ⚠️ Be sure it matches your smart contract!
  */
-const startIndex = 0;
+const startIndex = 1;
 
 const format = {
   width: 512,
@@ -40,34 +39,17 @@ const background = {
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 10,
-    namePrefix: "Series 2", // Use to add a name to Metadata `name:`
+    growEditionSizeTo: 5,
+    namePrefix: "큐티 라이언",
     layersOrder: [
       { name: "Background" },
-      {
-        name: "Back Accessory",
-        // options: {
-        //   bypassDNA: true,
-        // },
-      },
-      { name: "Head" },
-      { name: "Clothes" },
-      { name: "Eyes" },
-      { name: "Hair" },
-      { name: "Accessory" },
-      { name: "Shirt Accessories" },
+      { name: "Mane" },
+      { name: "Face" },
+      { name: "Beard" },
+      { name: "Glasses" },
+      { name: "Border" },
     ],
   },
-  // {
-  //   growEditionSizeTo: 10,
-  //   namePrefix: "Lion",
-  //   resetNameIndex: true, // this will start the Lion count at #1 instead of #6
-  //   layersOrder: [
-  //     { name: "Background" },
-  //     { name: "Hats" },
-  //     { name: "Male Hair" },
-  //   ],
-  // },
 ];
 
 /**
